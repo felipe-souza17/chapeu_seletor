@@ -1,0 +1,7 @@
+{
+  "name": "chapeu_seletor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
