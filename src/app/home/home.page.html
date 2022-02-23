@@ -1,20 +1,52 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-img src="../../assets/img/harryPotter.png"></ion-img>
+      <h1>Bem-Vindo a Hogwarts!</h1>
+      <p>
+        Seja bem-vindo futuro bruxo(a) a Hogwarts! Gostaria de entrar na nossa
+        escola e ver qual das quatro casas você iria ser selecionado? Nos
+        acompanhe primeiro para algumas explicações antes de darmos
+        continuidade!
+      </p>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="../../assets/img/amigaDoHarry.png"></ion-img>
+      <h1>A Saga Harry Potter</h1>
+      <p>
+        A trama acompanha um jovem bruxo que inicia seus estudos na Escola de
+        Magia e Bruxaria de Hogwarts. Ao longo das obras, o protagonista
+        desvenda mistérios de seu passado e do mundo da magia. O vilão
+        principal, Voldemort, assassinou os pais de Potter quando ele era apenas
+        um bebê.
+      </p>
+    </ion-slide>
+    <ion-slide>
+      <ion-img src="../../assets/img/amigoDoHarry.png"></ion-img>
+      <p>
+        O mundo bruxo é mantido em segredo, presumivelmente para evitar a
+        perseguição de bruxas e bruxos. Tal habilidade é inata e essas crianças
+        são convidadas a participar de uma escola de magia exclusiva, que ensina
+        as habilidades necessárias para ter sucesso no mundo bruxo, quando os
+        alunos são recebidos na escola eles devem passar pelo
+        <strong>Chapéu Seletor</strong>
+      </p>
+    </ion-slide>
+    <ion-slide>
+      <ion-img
+        class="info-hat"
+        src="../../assets/img/cartaHogwarts.png"
+      ></ion-img>
+      <h1>O que é Chapéu Seletor?</h1>
+      <p>
+        O Chapéu Seletor é um artefato consciente de Hogwarts que determina
+        magicamente para qual das quatro Casas cada novo aluno vai ser mandado.
+        Essas quatro Casas são
+        <strong>Grifinória, Lufa-Lufa, Corvinal e Sonserina.</strong>
+      </p>
+      <p><strong>Pronto para descobrir qual a sua Casa?</strong></p>
+      <!-- [routerLink]="['...']" -->
+      <ion-button expand="block" color="warning">Começar!</ion-button>
+    </ion-slide>
+  </ion-slides>
 </ion-content>

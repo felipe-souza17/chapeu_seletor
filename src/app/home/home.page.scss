@@ -1,27 +1,21 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+* {
+  font-family: "IBM Plex Mono", monospace;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-slides {
+  height: 100%;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-slide {
+  display: flex;
+  flex-direction: column;
 }
-
-#container a {
-  text-decoration: none;
+ion-slide p {
+  width: 80%;
+  font-size: 15px;
+}
+ion-img {
+  object-fit: cover;
+}
+.info-hat {
+  width: 50%;
+  margin: 80px 0;
 }
