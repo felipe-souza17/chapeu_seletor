@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'chapeu',
+    loadChildren: () => import('./chapeu/chapeu.module').then( m => m.ChapeuPageModule)
+  },
 ];
 
 @NgModule({

@@ -6,11 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  public username:string
 
   slideOpts = {
-    initialSlide: 2,
+    initialSlide: 0,
     speed: 400
   };
   constructor() {}
-
+ 
+  saveUser() {
+    const userData = this.username
+    localStorage.setItem('user', userData)
+  }
 }
