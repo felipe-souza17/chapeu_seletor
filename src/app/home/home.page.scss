@@ -12,12 +12,16 @@ ion-slides {
 ion-slide {
   display: flex;
   flex-direction: column;
-}
-ion-slide p {
-  width: 80%;
-  font-size: 15px;
+  h1 {
+    font-size: 15px;
+  }
+  p {
+    width: 80%;
+    font-size: 12px;
+  }
 }
 ion-img {
+  width: 260px;
   object-fit: cover;
 }
 .info-hat {
