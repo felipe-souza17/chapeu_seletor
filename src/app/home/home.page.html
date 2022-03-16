@@ -4,14 +4,10 @@
       <ion-img src="../../assets/img/harryPotter.png"></ion-img>
       <h1>Bem-Vindo a Hogwarts!</h1>
       <ion-item>
-        <ion-label class="label-username" position="stacked"
+        <ion-label class="label-username" position="floating"
           >Entre com seu nome:</ion-label
         >
-        <ion-input
-          name="username"
-          [(ngModel)]="username"
-          class="input-username"
-        ></ion-input>
+        <ion-input name="username" [(ngModel)]="username"></ion-input>
       </ion-item>
       <p>
         Seja bem-vindo futuro bruxo(a) a Hogwarts! Gostaria de entrar na nossa
@@ -55,12 +51,7 @@
         <strong>Grifinória, Lufa-Lufa, Corvinal e Sonserina.</strong>
       </p>
       <p><strong>Pronto para descobrir qual a sua Casa?</strong></p>
-      <!--  -->
-      <ion-button
-        expand="block"
-        color="warning"
-        (click)="saveUser()"
-        [routerLink]="['/chapeu']"
+      <ion-button expand="block" color="warning" (click)="nextPage(username)"
         >Começar!</ion-button
       >
     </ion-slide>

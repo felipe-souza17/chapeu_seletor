@@ -1,9 +1,22 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
   <ion-text>
-    <h1 class="title">Certo, agora veremos de que casa você será!</h1>
-    <p>Clique no chapéu e descubra!</p>
+    <h1>Certo, agora veremos de que casa você será!</h1>
+    <p>{{ text }}</p>
   </ion-text>
-  <ion-img class="witch_hat" src="../../assets/img/witch_hat.png"></ion-img>
-  <ion-label> </ion-label>
-  <!-- <ion-img src="../../assets/img/witch_hat.png"></ion-img> -->
+  <ion-img
+    (click)="checkHouse()"
+    class="witch_hat"
+    src="{{ imageSrc }}"
+    disabled
+  ></ion-img>
+  <ion-text>
+    <p>{{ subtext }}</p>
+  </ion-text>
 </ion-content>

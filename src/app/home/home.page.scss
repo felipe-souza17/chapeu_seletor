@@ -1,6 +1,11 @@
 * {
   font-family: "IBM Plex Mono", monospace;
 }
+ion-item {
+  ion-label {
+    text-align: center;
+  }
+}
 ion-slides {
   height: 100%;
 }
@@ -17,8 +22,5 @@ ion-img {
 }
 .info-hat {
   width: 50%;
-  margin: 80px 0;
-}
-.label-username {
-  text-align: center;
+  margin: 40px 0;
 }
