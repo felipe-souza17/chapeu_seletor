@@ -8,6 +8,7 @@ ion-item {
 }
 ion-slides {
   height: 100%;
+  --bullet-background-active: #eb445a;
 }
 ion-slide {
   display: flex;
@@ -20,6 +21,7 @@ ion-slide {
     font-size: 12px;
   }
 }
+
 ion-img {
   width: 260px;
   object-fit: cover;
@@ -27,4 +29,9 @@ ion-img {
 .info-hat {
   width: 50%;
   margin: 40px 0;
+}
+ion-toggle {
+  position: absolute;
+  top: 25px;
+  right: 20px;
 }

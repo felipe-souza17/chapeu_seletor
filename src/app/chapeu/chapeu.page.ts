@@ -37,7 +37,5 @@ export class ChapeuPage implements OnInit {
       this.subtext = '';
       this.result = `Você acaba de se juntar a casa ${house}!`;
     }
-
-
   }
 }
