@@ -2,18 +2,64 @@
   font-family: "IBM Plex Mono", monospace;
   transition: 0.5s;
 }
+ion-grid {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+}
+.bgColor {
+  background-color: #E3B5B5;
+}
+.bgGreen {
+  background-color: #2fab4a;
+}
+.bgRed {
+  background-color: #d2373c;
+}
+.bgYellow {
+  background-color: #f7d54e;
+}
+.bgBlue {
+  background-color: #28CDF9;
+}
+.bgSecondary {
+  flex-grow: 1;
+  background-color: #FFFFFF;
+  border-radius: 50% 50% 0% 0% / 23% 23% 77% 77%
+}
 ion-text {
-  h1,
+  h1 {
+    font-size: 85%;
+    padding: 20%;
+    text-align: center;
+    margin: 25px auto;
+    font-weight: 700;
+  }
+  h2,
   p {
     width: 75%;
     margin: 25px auto;
     text-align: center;
   }
   p {
-    font-size: 14px;
+    font-size: 13px;
   }
+  animation-name: FadeImage;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
-.witch_hat {
+.sorting_hat {
   width: 75%;
-  margin: 40px auto 0;
+  margin: 5% auto;
+  animation-name: FadeImage;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes FadeImage
+{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Grifinória",
+    "color": "bgRed",
+    "description": "Você acaba de se juntar a casa Grifinória! Fundada por Godrico Grifinória, Godrico instruiu o Chapéu Seletor a classificar estudantes que obtivessem características as quais ele mais valorizava, como a coragem, o cavalheirismo e a determinação!"
+  },
+  {
+    "id": 2,
+    "name": "Sonserina",
+    "color": "bgGreen",
+    "description": "Você acaba de se juntar a casa Sonserina! Fundada por Salazar Slytherin, uma casa onde os membros possuem ambição, buscam pela grandeza, liderança, desenvoltura e astúcia."
+  },
+  {
+    "id": 3,
+    "name": "Lufa-Lufa",
+    "color": "bgYellow",
+    "description": "Você acaba de se juntar a casa Lufa-Lufa! Fundada por Helga Lufa-Lufa, sendo conhecida como a mais inclusiva entre as outras três; valorizando o trabalho árduo, a dedicação, a paciência, a lealdade e o jogo limpo ao invés de uma aptidão particular de seus membros."
+  },
+  {
+    "id": 4,
+    "name": "Corvinal",
+    "color": "bgBlue",
+    "description": "Você acaba de se juntar a casa Corvinal! Fundada por Rowena Ravenclaw, Seus membros, comumente, são caracterizados por sua inteligência, aprendizado e sabedoria!"
+  }
+]

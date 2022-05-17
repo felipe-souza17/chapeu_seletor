@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DadosService } from './../services/dados.service';
+import { Animation, AnimationController } from '@ionic/angular';
 
 @Component({
   selector: 'app-chapeu',
@@ -8,34 +9,49 @@ import { DadosService } from './../services/dados.service';
 })
 export class ChapeuPage implements OnInit {
 
-  public clicked = false;
+  clicked: boolean;
   username: string;
   imageSrc: string;
   text: string;
-  subtext: string;
   result: string;
+  bgColor: string;
+  description: string;
+  houseData: any;
 
-  constructor(public dadosService: DadosService) { }
+  constructor(public dadosService: DadosService, private animationCtrl: AnimationController) { }
 
   ngOnInit() {
     this.username = this.dadosService.pegarDados('username');
-    this.imageSrc = '../../assets/img/witch_hat.png';
-    this.text = 'Certo, agora veremos de que casa você será!';
-    this.subtext = 'Clique no chapéu para verificar qual é sua casa.';
-    this.result = '';
+    this.imageSrc = '../../assets/img/sorting_hat.png';
+    this.text = 'Clique no chapéu para verificar sua casa!';
+    this.bgColor = 'bgColor';
+    this.houseData = require('../json/data.json');
   }
 
   checkHouse() {
     const randomNumber = Math.floor(Math.random() * 4);
-    const housesImage = ['../../assets/img/leao.png', '../../assets/img/cobra.png', '../../assets/img/gamba.png', '../../assets/img/aguia.png'];
-    const house = randomNumber === 0 ? 'Grifinória' : (randomNumber === 1 ? 'Sonserina' : (randomNumber === 2 ? 'Lufa-Lufa' : 'Corvinal' ));
+    const housesImage = [
+    '../../assets/img/leao.png',
+    '../../assets/img/cobra.png',
+    '../../assets/img/gamba.png',
+    '../../assets/img/aguia.png'
+  ];
+    const house = this.houseData[randomNumber];
+    const animationHouse = this.animationCtrl.create()
+    .addElement(document.querySelector('.sorting_hat'))
+    .duration(1500)
+    .fromTo('transform', 'translateY(0%)', 'translateY(-5%)')
+    .fromTo('opacity', '0.6', '1');
 
     if(!this.clicked) {
+      animationHouse.play();
       this.clicked = true;
       this.imageSrc = housesImage[randomNumber];
-      this.text = `Parabéns, ${this.username}!`;
-      this.subtext = '';
-      this.result = `Você acaba de se juntar a casa ${house}!`;
+      this.result = house.name;
+      this.description = house.description;
+      this.bgColor = house.color;
     }
   }
+
+
 }

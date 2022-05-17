@@ -6,17 +6,27 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-text>
-    <h1>{{ text }}</h1>
-    <p>{{ subtext }}</p>
-  </ion-text>
-  <ion-img
-    (click)="checkHouse()"
-    class="witch_hat"
-    src="{{ imageSrc }}"
-    disabled
-  ></ion-img>
-  <ion-text>
-    <p>{{ result }}</p>
-  </ion-text>
+  <ion-grid class="{{ bgColor }}">
+    <ion-row>
+      <ion-col>
+        <ion-img
+          (click)="checkHouse()"
+          class="sorting_hat"
+          src="{{ imageSrc }}"
+          disabled
+        ></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row class="bgSecondary">
+      <ion-col>
+        <ion-text *ngIf="!this.clicked">
+          <h1>{{ text }}</h1>
+        </ion-text>
+        <ion-text *ngIf="this.clicked">
+          <h2>{{ result }}!</h2>
+          <p>Parabéns, {{ username }}. {{ description }}</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -14,12 +14,5 @@
 
 <h2>Preview:</h2>
 <div align="center">
-<img width="" height="480" src="https://i.imgur.com/hXex8TW.jpg" >
-<img width="" height="480" src="https://i.imgur.com/TSetWt5.jpg" >
-<img width="" height="480" src="https://i.imgur.com/Foms0v5.jpg" >
-</div>
-<div align="center">
-<img width="" height="480" src="https://i.imgur.com/LNa5zwa.jpg" >
-<img width="" height="480" src="https://i.imgur.com/Afc0GNK.jpg" >
-<img width="" height="480" src="https://i.imgur.com/06nHmYO.jpg" >
+<img src="https://i.imgur.com/8XDsAXL.gif">
 </div>
